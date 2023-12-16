@@ -61,7 +61,6 @@ function Nav(userType){
             <Link to="/Billing" className={`list-group-item ${currentPath === "/Billing" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Billing </Link> 
             <Link to="/Energy-Suggestions" className={`list-group-item ${currentPath === "/Energy-Suggestions" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Energy Suggestions </Link> 
             <Link to="/Suggestion-Provider" className={`list-group-item ${currentPath === "/Suggestion-Provider" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Energy Suggestion Provider </Link> 
-            <Link to="/DeviceControl" className={`list-group-item ${currentPath === "/DeviceControl" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Device Control </Link> 
             <Link to="/Emergency" className={`list-group-item ${currentPath === "/Emergency" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Emergency </Link> 
             <Link to="/Profile" className={`list-group-item ${currentPath === "/Profile" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Profile </Link> 
             <Link to="/Login" className={`list-group-item ${currentPath === "/Login" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Login </Link> 
