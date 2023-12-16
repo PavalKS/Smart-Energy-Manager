@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Smart-Energy-Manager
+# Smart-Energy-Manager TEAM 1
 =======
 # Getting Started with Create React App
 
