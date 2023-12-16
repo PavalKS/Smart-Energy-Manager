@@ -1,0 +1,80 @@
+[debug] [2023-11-23T06:00:52.923Z] ----------------------------------------------------------------------
+[debug] [2023-11-23T06:00:52.928Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-23T06:00:52.929Z] CLI Version:   12.9.1
+[debug] [2023-11-23T06:00:52.930Z] Platform:      win32
+[debug] [2023-11-23T06:00:52.930Z] Node Version:  v18.18.0
+[debug] [2023-11-23T06:00:52.931Z] Time:          Thu Nov 23 2023 11:30:52 GMT+0530 (India Standard Time)
+[debug] [2023-11-23T06:00:52.931Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-23T06:00:52.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-23T06:00:52.944Z] > authorizing via signed-in user (pavalsudhakar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\college\SEM7\FSD\PROJECT\smart-energy-manager
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-23T06:03:56.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2023-11-23T06:03:57.834Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2023-11-23T06:03:57.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2023-11-23T06:04:55.406Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945:addFirebase [none]
+[debug] [2023-11-23T06:04:57.092Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945:addFirebase 200
+[debug] [2023-11-23T06:04:57.093Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945:addFirebase {"name":"operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm"}
+[debug] [2023-11-23T06:04:57.097Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm [none]
+[debug] [2023-11-23T06:04:58.936Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm 200
+[debug] [2023-11-23T06:04:58.936Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm {"name":"operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm"}
+[debug] [2023-11-23T06:04:59.451Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-11-23T06:04:59.452Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm [none]
+[debug] [2023-11-23T06:05:00.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm 200
+[debug] [2023-11-23T06:05:00.083Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm {"name":"operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm"}
+[debug] [2023-11-23T06:05:01.092Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-11-23T06:05:01.093Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm [none]
+[debug] [2023-11-23T06:05:02.466Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm 200
+[debug] [2023-11-23T06:05:02.467Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm {"name":"operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm"}
+[debug] [2023-11-23T06:05:04.473Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-11-23T06:05:04.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm [none]
+[debug] [2023-11-23T06:05:05.508Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm 200
+[debug] [2023-11-23T06:05:05.510Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm {"name":"operations/workflows/YzQ2ODJmNTQtMjk0MC00NTE1LWI0OGEtYWI2YTFlOWQ2YTRm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"smart-energy-manager-46945","projectNumber":"111799130110","displayName":"SMART-ENERGY-MANAGER","name":"projects/smart-energy-manager-46945","resources":{"hostingSite":"smart-energy-manager-46945"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: smart-energy-manager-46945
+[info]    - Project Name: SMART-ENERGY-MANAGER
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/smart-energy-manager-46945/overview
+[info] i  Using project smart-energy-manager-46945 (SMART-ENERGY-MANAGER) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-11-23T06:05:05.586Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-11-23T06:05:05.587Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/smart-energy-manager-46945
+[debug] [2023-11-23T06:05:07.456Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com 200
+[debug] [2023-11-23T06:05:07.456Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-11-23T06:05:07.459Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-11-23T06:05:07.459Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/smart-energy-manager-46945
+[debug] [2023-11-23T06:05:09.808Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-11-23T06:05:09.809Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-11-23T06:05:19.811Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-11-23T06:05:19.812Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/smart-energy-manager-46945
+[debug] [2023-11-23T06:05:21.904Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com 200
+[debug] [2023-11-23T06:05:21.905Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smart-energy-manager-46945/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-11-23T06:05:21.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945 [none]
+[debug] [2023-11-23T06:05:22.477Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945 200
+[debug] [2023-11-23T06:05:22.478Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/smart-energy-manager-46945 {"projectId":"smart-energy-manager-46945","projectNumber":"111799130110","displayName":"SMART-ENERGY-MANAGER","name":"projects/smart-energy-manager-46945","resources":{"hostingSite":"smart-energy-manager-46945"},"state":"ACTIVE","etag":"1_99236187-3315-425c-81f9-79d709903e15"}
