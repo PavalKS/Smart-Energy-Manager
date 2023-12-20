@@ -159,5 +159,3 @@ const getEmergencyNumber = () => {
 };
 
 export default EmergencyResponse;
-
-
