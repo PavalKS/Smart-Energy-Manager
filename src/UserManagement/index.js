@@ -37,7 +37,7 @@ const UserManagement = () => {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Toom Number</th>
+            <th>Room Number</th>
             <th>User Type</th>
             <th>Action</th>
           </tr>
@@ -51,7 +51,7 @@ const UserManagement = () => {
               <td>{user.Room}</td>
               <td>{user.User}</td>
               <td>
-                <button onClick={() => handleDeleteUser(user._id)}>Delete</button>
+                <button class="btn btn-danger" onClick={() => handleDeleteUser(user._id)}>Delete</button>
               </td>
             </tr>
           ))}
