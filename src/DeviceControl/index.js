@@ -20,6 +20,7 @@ const DeviceControl = () => {
   console.log("room number",roomNumber);
 
   useEffect(() => {
+    sessionStorage.setItem('deviceStates', JSON.stringify(deviceStates));
     const fetchDevices = async () => {
       try {
         const response = await axios.get(`http://localhost:3001/deviceinfo/${roomNumber}`);
@@ -32,7 +33,7 @@ const DeviceControl = () => {
     if (roomNumber) {
       fetchDevices();
     }
-  }, [roomNumber]);
+  },[deviceStates],[roomNumber]);
 
   const toggleDevice = async (device) => {
     try {
