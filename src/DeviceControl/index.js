@@ -9,15 +9,30 @@ const DeviceControl = () => {
     ac: false,
   };
 
-  // Retrieve stored device states from session storage or use initial states
   const [deviceStates, setDeviceStates] = useState(
     JSON.parse(sessionStorage.getItem('deviceStates')) || initialDeviceStates
   );
 
-  // Update session storage whenever deviceStates change
+  const [devices, setDevices] = useState([]);  
+  //const roomNumber = sessionStorage.getItem('roomNumber');
+  const roomNumber="1";
+  //const roomNumber = sessionStorage.getItem('roomNumber'); // Get room number from sessionStorage
+  console.log("room number",roomNumber);
+
   useEffect(() => {
-    sessionStorage.setItem('deviceStates', JSON.stringify(deviceStates));
-  }, [deviceStates]);
+    const fetchDevices = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3001/deviceinfo/${roomNumber}`);
+        setDevices(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    if (roomNumber) {
+      fetchDevices();
+    }
+  }, [roomNumber]);
 
   const toggleDevice = async (device) => {
     try {
@@ -90,6 +105,21 @@ const DeviceControl = () => {
           </div>
         </div>
       </div>
+
+      <h1 className="display-3">Devices in Room {roomNumber}</h1>
+      <br></br>
+      <ul>
+        {devices.map((device, index) => (
+          <div>
+          <div key={index} className="card bg-dark text-white px-3 py-3">
+            <h3>Device Name: {device.DeviceName}</h3>
+            <br />
+            <h3>Room Number: {device.RoomNumber}</h3>
+          </div>
+          <br></br>
+          </div>
+        ))}
+      </ul>
     </div>
   );
 };
