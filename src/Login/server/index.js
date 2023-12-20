@@ -15,18 +15,16 @@ let deviceStates = {
   ac: false,
 };
 
-
+/*
 mongoose.connect("mongodb://127.0.0.1:27017/loginsignupsmarthome", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-})
+})*/
 
-/*
 mongoose.connect("mongodb+srv://pavalsudakar:Rct93tZE6FNMuQK9@cluster0.s8qtvil.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});*/
-
+});
 
 app.post('/Signup', async (req, res) => {
   try {
