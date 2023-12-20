@@ -8,7 +8,6 @@ const UserSchema = new mongoose.Schema({
     Password: String,
     User: String
 });
-
 const UserModel = mongoose.model("Users",UserSchema)
 
 const EmergencySchema = new mongoose.Schema({
@@ -18,7 +17,6 @@ const EmergencySchema = new mongoose.Schema({
     Remarks: String,
     Resolved: Boolean
 })
-
 const EmergencyModel = mongoose.model("Emergency", EmergencySchema)
 
 const MedicalInfoSchema = new mongoose.Schema({
@@ -32,18 +30,25 @@ const MedicalInfoSchema = new mongoose.Schema({
     BloodGroup: String,
     EmergencyContact: String
 })
-
 const MedicalInfoModel = mongoose.model("MedicalInfo", MedicalInfoSchema)
 
 const EnergySuggestionSchema = new mongoose.Schema({
     Suggestion: String
 });
-
 const EnergySuggestionModel = mongoose.model("EnergySuggestion", EnergySuggestionSchema)
+
+const DeviceInfoSchema = new mongoose.Schema({
+    DeviceName: String,
+    RoomNumber: String,
+    PowerConsumption: String
+})
+const DeviceInfoModel = mongoose.model("DeviceInformation", DeviceInfoSchema)
+
 
 module.exports = {
     UserModel,
     EmergencyModel,
     MedicalInfoModel,
-    EnergySuggestionModel
-};
+    EnergySuggestionModel,
+    DeviceInfoModel
+}
