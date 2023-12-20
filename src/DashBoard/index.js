@@ -4,6 +4,7 @@ import Chart from 'chart.js/auto';
 const Dashboard = () => {
   const [energyData, setEnergyData] = useState([]);
   const chartRefs = useRef([]);
+  
 
   useEffect(() => {
     const generateDeviceData = () => {
