@@ -23,6 +23,7 @@ function Nav(userType){
             <Link to="/UserManagement" className={`list-group-item ${currentPath === "/UserManagement" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> User Management </Link> 
             <Link to="/Profile" className={`list-group-item ${currentPath === "/Profile" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Profile </Link> 
             <Link to="/Login" className={`list-group-item ${currentPath === "/Login" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Login </Link> 
+            <Link to="/DeviceRegistration" className={`list-group-item ${currentPath === "/DeviceRegistration" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Device Registration </Link> 
           </div>
         </>
       );
@@ -46,7 +47,8 @@ function Nav(userType){
           <div className="list-group p-3 text-primary">
             <Link to="/Homepage" className={`list-group-item ${currentPath === "/Homepage" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Home </Link> 
             <Link to="/Emergency" className={`list-group-item ${currentPath === "/Emergency" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Emergency </Link> 
-            <Link to="/Emergency-Response" className={`list-group-item ${currentPath === "/Emergency-Response" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Emergency Response </Link> 
+            <Link to="/Emergency-Response" className={`list-group-item ${currentPath === "/Emergency-Response" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Emergency Response </Link>
+            <Link to="/DeviceControl" className={`list-group-item ${currentPath === "/DeviceControl" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Device Control </Link>  
             <Link to="/Profile" className={`list-group-item ${currentPath === "/Profile" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Profile </Link> 
             <Link to="/Login" className={`list-group-item ${currentPath === "/Login" ? 'text-dark bg-light active' : 'text-light bg-dark'}`}> Login </Link> 
           </div>
