@@ -65,7 +65,7 @@ function SuggestionProvider() {
             <div key={index} className="card text-white bg-dark px-3 py-3 mb-3">
               <strong>Suggestion Details:</strong> {suggestion.Suggestion} <br />
               <br></br>
-              <button onClick={() => handleDeleteSuggestion(suggestion._id)} style={{ width: '20%' }}>Delete Suggestion</button>
+              <button className="btn btn-danger" onClick={() => handleDeleteSuggestion(suggestion._id)} style={{ width: '20%' }}>Delete Suggestion</button>
             </div>
           ))}
         </div>
