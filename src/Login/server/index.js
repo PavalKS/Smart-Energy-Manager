@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const { UserModel, EmergencyModel, MedicalInfoModel, EnergySuggestionModel} = require('./models/model');
+const { UserModel, EmergencyModel, MedicalInfoModel, EnergySuggestionModel, DeviceInfoModel} = require('./models/model');
 
 const app = express();
 app.use(express.json());
@@ -15,10 +15,18 @@ let deviceStates = {
   ac: false,
 };
 
+
+mongoose.connect("mongodb://127.0.0.1:27017/loginsignupsmarthome", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
+/*
 mongoose.connect("mongodb+srv://pavalsudakar:Rct93tZE6FNMuQK9@cluster0.s8qtvil.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+});*/
+
 
 app.post('/Signup', async (req, res) => {
   try {
@@ -27,6 +35,17 @@ app.post('/Signup', async (req, res) => {
   } catch (error) {
     console.error('Signup error:', error);
     res.status(500).json({ error: 'An error occurred during signup' });
+  }
+});
+
+
+app.post('/DeviceRegistration', async (req, res) => {
+  try {
+    const newDevice = await DeviceInfoModel.create(req.body);
+    res.json(newDevice);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'An error occurred' });
   }
 });
 
@@ -156,6 +175,16 @@ app.put('/devices/:device', (req, res) => {
     res.status(200).json({ message: `Toggled ${device} successfully` });
   } else {
     res.status(400).json({ error: `Device ${device} not found` });
+  }
+});
+
+app.get('/deviceinfo/:roomNumber', async (req, res) => {
+  const { roomNumber } = req.params;
+  try {
+    const devices = await DeviceInfoModel.find({ RoomNumber: roomNumber });
+    res.json(devices);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 
