@@ -44,6 +44,10 @@ function Profile() {
     axios.get(`http://localhost:3001/users/${loggedInUser}`)
       .then(response => {
         setUserData(response.data);
+        if (response.data && response.data.Room) {
+          sessionStorage.setItem('roomNumber', response.data.Room); // Store roomNumber in session storage
+          console.log("room number stored: ", sessionStorage.getItem('roomNumber'));
+        }
       })
       .catch(error => {
         console.error("Error fetching user data:", error.message);
