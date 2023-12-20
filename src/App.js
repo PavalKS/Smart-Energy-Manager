@@ -17,6 +17,7 @@ import DashboardAdmin from './DashBoard-Admin';
 import SuggestionProvider from './Suggestion-Provider/provider';
 import BillingPage from './Billing';
 import UserManagement from './UserManagement';
+import DeviceRegistration from './DeviceRegistration';
 
 function App() {
   const [userData, setUserData] = useState('');
@@ -63,6 +64,7 @@ function App() {
               <Route path="/Suggestion-Provider" element={<SuggestionProvider/>}/>
               <Route path="/Billing" element={<BillingPage/>}/>
               <Route path="/UserManagement" element={<UserManagement/>}/>
+              <Route path="/DeviceRegistration" element={<DeviceRegistration/>}/>            
             </Routes>
           </div>
         </div>
@@ -101,6 +103,4 @@ function App() {
       <MainLayout userType={userType} />
     </div>
   );
-}
-
-export default App;*/
+}*/
